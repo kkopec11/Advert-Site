@@ -1,7 +1,7 @@
 import * as React from "react";
 import { chakra, ImageProps, forwardRef } from "@chakra-ui/react";
-import logo from "./assets/gradient-logo.svg";
+import logo from "../../assets/logos/logo2.svg";
 
-export const GradientLogo = forwardRef<ImageProps, "img">((props, ref) => {
+export const Logo = forwardRef<ImageProps, "img">((props, ref) => {
   return <chakra.img src={logo} ref={ref} {...props} />;
 });
