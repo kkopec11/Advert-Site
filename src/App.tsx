@@ -35,33 +35,104 @@ export const App = () => (
         <Box>
           <Logo width={"100%"} height={"100%"} />
         </Box>
-        {true ? (
+        {false ? (
           <HStack gap={50} paddingRight={5}>
-            <Text bgColor={"#F69608"} bgClip="text">
+            {/* <Text bgColor={"#F69608"} bgClip="text">
               Strona Główna
-            </Text>
-            <Text bgColor={"#F69608"} bgClip="text">
+            </Text> */}
+            <Box
+              as="button"
+              p={4}
+              color="black"
+              fontWeight="bold"
+              borderRadius="md"
+              bgGradient="linear(to-r, #EB6E00, #F3BCE6)"
+              _hover={{
+                bgGradient: "linear(to-r,#b15200, #be4ca3)",
+                color: "white",
+              }}
+            >
+              Strona Główna
+            </Box>
+            <Box
+              as="button"
+              p={4}
+              color="black"
+              fontWeight="bold"
+              borderRadius="md"
+              bgGradient="linear(to-r, #EB6E00, #F3BCE6)"
+              _hover={{
+                bgGradient: "linear(to-r,#b15200, #be4ca3)",
+                color: "white",
+              }}
+            >
               Fotoksiążka
-            </Text>
-            <Text bgColor={"#F69608"} bgClip="text">
+            </Box>
+            <Box
+              as="button"
+              p={4}
+              color="black"
+              fontWeight="bold"
+              borderRadius="md"
+              bgGradient="linear(to-r, #EB6E00, #F3BCE6)"
+              _hover={{
+                bgGradient: "linear(to-r,#b15200, #be4ca3)",
+                color: "white",
+              }}
+            >
               O Nas
-            </Text>
-            <Text bgColor={"#F69608"} bgClip="text">
+            </Box>
+            <Box
+              as="button"
+              p={4}
+              color="black"
+              fontWeight="bold"
+              borderRadius="md"
+              bgGradient="linear(to-r, #EB6E00, #F3BCE6)"
+              _hover={{
+                bgGradient: "linear(to-r,#b15200, #be4ca3)",
+                color: "white",
+              }}
+            >
               Kontakt
-            </Text>
+            </Box>
           </HStack>
         ) : (
           <HStack gap={50} paddingRight={5}>
-            <Text bgGradient="linear(to-l, #ee8bd7, #EB6E00)" bgClip="text">
+            <Text
+              bgGradient="linear(to-l, #ee8bd7, #EB6E00)"
+              bgClip="text"
+              _hover={{
+                bgGradient: "linear(to-r,#b15200, #be4ca3)",
+              }}
+            >
               Strona Główna
             </Text>
-            <Text bgGradient="linear(to-l, #ee8bd7, #EB6E00)" bgClip="text">
+            <Text
+              bgGradient="linear(to-l, #ee8bd7, #EB6E00)"
+              bgClip="text"
+              _hover={{
+                bgGradient: "linear(to-r,#b15200, #be4ca3)",
+              }}
+            >
               Fotoksiążka
             </Text>
-            <Text bgGradient="linear(to-l, #ee8bd7, #EB6E00)" bgClip="text">
+            <Text
+              bgGradient="linear(to-l, #ee8bd7, #EB6E00)"
+              bgClip="text"
+              _hover={{
+                bgGradient: "linear(to-r,#b15200, #be4ca3)",
+              }}
+            >
               O Nas
             </Text>
-            <Text bgGradient="linear(to-l, #ee8bd7, #EB6E00)" bgClip="text">
+            <Text
+              bgGradient="linear(to-l, #ee8bd7, #EB6E00)"
+              bgClip="text"
+              _hover={{
+                bgGradient: "linear(to-r,#b15200, #be4ca3)",
+              }}
+            >
               Kontakt
             </Text>
           </HStack>
@@ -74,7 +145,6 @@ export const App = () => (
           borderColor="#ffffff"
           borderRadius="15px"
           width={"80%"}
-          // height={"200px"}
         >
           <GradientLogo />
 
@@ -99,21 +169,6 @@ export const App = () => (
           </Container>
         </Box>
       </Center>
-      {/* {true ? (
-        <Box
-          marginTop={3}
-          // p={0.5}
-          p={0.3}
-          borderRadius="md"
-          bgGradient="linear(to-r, #EB6E00, #ee8bd7)"
-        />
-      ) : (
-        <Divider
-          marginTop={3}
-          orientation="horizontal"
-          borderColor={"#36231D"}
-        />
-      )} */}
     </Box>
   </ChakraProvider>
 );
