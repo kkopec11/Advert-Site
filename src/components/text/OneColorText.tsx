@@ -9,9 +9,10 @@ const OneColorText: React.FC<ChildrenProps> = ({ children }) => {
   return (
     <Text
       fontSize={"22px"}
-      bgColor={"#F69608"}
+      bgColor={"#000000"}
       _hover={{
-        bgColor: "#EB6E00",
+        // bgColor: "#EB6E00",
+        bgGradient: "linear(to-br,#b15200, #be4ca3)",
       }}
       bgClip="text"
     >
