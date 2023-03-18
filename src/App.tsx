@@ -39,7 +39,7 @@ export const App = () => (
         <Box>
           <Logo width={"100%"} height={"100%"} />
         </Box>
-        {true ? (
+        {false ? (
           <HStack gap={50} paddingRight={5}>
             <GradientButton>Strona Główna</GradientButton>
             <GradientButton>Fotoksiążka</GradientButton>
