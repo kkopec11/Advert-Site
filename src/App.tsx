@@ -16,7 +16,7 @@ import { GradientLogo } from "./components/logo/GradientLogo";
 import "./styles.css";
 import GradientButton from "./components/buttons/GradientButton";
 import OneColorText from "./components/text/OneColorText";
-import Background from "../src/assets/logos/bg1.png";
+import Background from "../src/assets/backgroundImages/bg1.png";
 const showButtons = false;
 const stickyHeader = true;
 
@@ -28,7 +28,7 @@ export const App = () => (
       fontSize="xl"
       p={5}
       backgroundImage={`url(${Background})`}
-      minH="100vh"
+      height="full"
       width={"full"}
       backdropBlur={"5px"}
       backdropFilter={"auto"}
