@@ -8,7 +8,7 @@ interface ChildrenProps {
 const GradientText: React.FC<ChildrenProps> = ({ children }) => {
   return (
     <Text
-      fontSize={"2xl"}
+      fontSize={"22px"}
       bgGradient="linear(to-l, #ee8bd7, #EB6E00)"
       bgClip="text"
       _hover={{

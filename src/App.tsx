@@ -17,6 +17,9 @@ import "./styles.css";
 import GradientButton from "./components/buttons/GradientButton";
 import GradientText from "./components/text/GradientText";
 
+const showButtons = false;
+const stickyHeader = true;
+
 export const App = () => (
   // {"bg":"#FDF4F1","font":"#36231D","icon-gradient-0":"#EB6E00","icon-gradient-1":"#F3BCE6","slogan":"#4a3731"}
 
@@ -27,35 +30,39 @@ export const App = () => (
       bgGradient="linear(to-br, #EB6E00, #F3BCE6)"
       minH="100vh"
     >
-      <HStack
-        // position="fixed"
-        justifyContent={"space-between"}
-        backgroundColor={"#ffffff"}
-        border="4px"
-        borderColor="#ffffff"
-        borderRadius="15px"
-        boxShadow={"dark-lg"}
-      >
-        <Box>
-          <Logo width={"100%"} height={"100%"} />
-        </Box>
-        {false ? (
-          <HStack gap={50} paddingRight={5}>
-            <GradientButton>Strona Główna</GradientButton>
-            <GradientButton>Fotoksiążka</GradientButton>
-            <GradientButton>O Nas</GradientButton>
-            <GradientButton>Kontakt</GradientButton>
-          </HStack>
-        ) : (
-          <HStack gap={50} paddingRight={55}>
-            <GradientText>Strona Główna</GradientText>
-            <GradientText>Fotoksiążka</GradientText>
-            <GradientText>O Nas</GradientText>
-            <GradientText>Kontakt</GradientText>
-          </HStack>
-        )}
-      </HStack>
-      <Center paddingTop={10}>
+      <Center width={"100%"}>
+        <HStack
+          justifyContent={"space-between"}
+          backgroundColor={"#ffffff"}
+          border="4px"
+          borderColor="#ffffff"
+          borderRadius="15px"
+          boxShadow={"dark-lg"}
+          position={stickyHeader ? "fixed" : "initial"}
+          marginTop={stickyHeader ? "100px" : "0px"}
+          width={stickyHeader ? "95%" : "100%"}
+        >
+          <Box>
+            <Logo width={"100%"} height={"100%"} />
+          </Box>
+          {showButtons ? (
+            <HStack gap={50} paddingRight={5}>
+              <GradientButton>Strona Główna</GradientButton>
+              <GradientButton>Fotoksiążka</GradientButton>
+              <GradientButton>O Nas</GradientButton>
+              <GradientButton>Kontakt</GradientButton>
+            </HStack>
+          ) : (
+            <HStack gap={50} paddingRight={55}>
+              <GradientText>Strona Główna</GradientText>
+              <GradientText>Fotoksiążka</GradientText>
+              <GradientText>O Nas</GradientText>
+              <GradientText>Kontakt</GradientText>
+            </HStack>
+          )}
+        </HStack>
+      </Center>
+      <Center paddingTop={stickyHeader ? 150 : 10}>
         <Box
           backgroundColor={"#ffffff"}
           border="4px"
