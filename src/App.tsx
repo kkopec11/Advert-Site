@@ -34,11 +34,12 @@ export const App = () => (
         border="4px"
         borderColor="#ffffff"
         borderRadius="15px"
+        boxShadow={"dark-lg"}
       >
         <Box>
           <Logo width={"100%"} height={"100%"} />
         </Box>
-        {false ? (
+        {true ? (
           <HStack gap={50} paddingRight={5}>
             <GradientButton>Strona Główna</GradientButton>
             <GradientButton>Fotoksiążka</GradientButton>
@@ -61,6 +62,7 @@ export const App = () => (
           borderColor="#ffffff"
           borderRadius="15px"
           width={"80%"}
+          boxShadow={"dark-lg"}
         >
           <Center width={"100%"}>
             <Box width={"60%"}>

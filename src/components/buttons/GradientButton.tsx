@@ -8,16 +8,18 @@ interface ChildrenProps {
 const GradientButton: React.FC<ChildrenProps> = ({ children }) => {
   return (
     <Box
+      boxShadow={"xl"}
       as="button"
       p={4}
       //   color="black"
       color="white"
       fontWeight="bold"
-      borderRadius="md"
-      bgGradient="linear(to-br, #ffa95e, #fcd4f3)"
+      borderRadius="40px"
+      bgGradient="linear(to-br, #ffa95e, #c284b3)"
       _hover={{
-        bgGradient: "linear(to-r,#b15200, #be4ca3)",
+        bgGradient: "linear(to-br,#b15200, #be4ca3)",
         color: "white",
+        boxShadow: "dark-lg",
       }}
     >
       {children}
