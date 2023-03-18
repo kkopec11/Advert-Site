@@ -55,7 +55,18 @@ export const App = () => (
               </HStack>
             ) : (
               <HStack gap={50} paddingRight={55}>
-                <OneColorText>Strona Główna</OneColorText>
+                <Text
+                  fontSize={"22px"}
+                  bgColor={"#000000"}
+                  bgGradient={"linear(to-br,#b15200, #be4ca3)"}
+                  // _hover={{
+                  //   bgGradient: "linear(to-br,#b15200, #be4ca3)",
+                  // }}
+                  bgClip="text"
+                >
+                  Strona Główna
+                </Text>
+                {/* <OneColorText >Strona Główna</OneColorText> */}
                 <OneColorText>Fotoksiążka</OneColorText>
                 <OneColorText>O Nas</OneColorText>
                 <OneColorText>Kontakt</OneColorText>
