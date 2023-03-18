@@ -16,7 +16,7 @@ import { GradientLogo } from "./components/logo/GradientLogo";
 import "./styles.css";
 import GradientButton from "./components/buttons/GradientButton";
 import OneColorText from "./components/text/OneColorText";
-import Background from "../src/assets/backgroundImages/bg1.png";
+import Background from "../src/assets/backgroundImages/bg1.png"; //1-5
 const showButtons = false;
 const stickyHeader = true;
 
