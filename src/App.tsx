@@ -46,7 +46,7 @@ export const App = () => (
             <GradientButton>Kontakt</GradientButton>
           </HStack>
         ) : (
-          <HStack gap={50} paddingRight={5}>
+          <HStack gap={50} paddingRight={55}>
             <GradientText>Strona Główna</GradientText>
             <GradientText>Fotoksiążka</GradientText>
             <GradientText>O Nas</GradientText>
