@@ -15,7 +15,7 @@ import { Logo } from "./components/logo/Logo";
 import { GradientLogo } from "./components/logo/GradientLogo";
 import "./styles.css";
 import GradientButton from "./components/buttons/GradientButton";
-import GradientText from "./components/text/GradientText";
+import OneColorText from "./components/text/OneColorText";
 
 const showButtons = false;
 const stickyHeader = true;
@@ -54,10 +54,10 @@ export const App = () => (
             </HStack>
           ) : (
             <HStack gap={50} paddingRight={55}>
-              <GradientText>Strona Główna</GradientText>
-              <GradientText>Fotoksiążka</GradientText>
-              <GradientText>O Nas</GradientText>
-              <GradientText>Kontakt</GradientText>
+              <OneColorText>Strona Główna</OneColorText>
+              <OneColorText>Fotoksiążka</OneColorText>
+              <OneColorText>O Nas</OneColorText>
+              <OneColorText>Kontakt</OneColorText>
             </HStack>
           )}
         </HStack>
