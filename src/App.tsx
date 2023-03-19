@@ -73,18 +73,20 @@ export const App = () => (
               </HStack>
             )}
           </HStack>
-          <Center width={"100%"}>
+          {/* <Center width={"100%"}>
             <Box width={"60%"}>
               <GradientLogo />
             </Box>
-          </Center>
+          </Center> */}
           <Container>
-            <Text>
-              Lorem ipsum dolor sit amet. Non alias commodi nam vitae inventore
-              et laboriosam reiciendis et autem nobis sed facilis atque eum
-              illum quia quo optio molestiae? In tempora quis sit molestiae
-              saepe qui ducimus aliquam. Qui totam unde qui optio nesciunt ut
-              dolores unde.
+            <Center paddingTop={10}>
+              <Text>Lorem ipsum dolor sit amet.</Text>
+            </Center>
+            <Text paddingTop={10}>
+              Non alias commodi nam vitae inventore et laboriosam reiciendis et
+              autem nobis sed facilis atque eum illum quia quo optio molestiae?
+              In tempora quis sit molestiae saepe qui ducimus aliquam. Qui totam
+              unde qui optio nesciunt ut dolores unde.
             </Text>
             <Text paddingTop={10} paddingBottom={10}>
               Est quas dignissimos ut sapiente quia ab fuga provident eum autem
