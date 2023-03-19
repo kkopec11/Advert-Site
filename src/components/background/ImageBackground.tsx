@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Flex } from "@chakra-ui/react";
+import { Box, Flex, Divider } from "@chakra-ui/react";
 import Navbar from "../navbar/Navbar";
 interface Props {
   imageURL: string;
@@ -9,7 +9,12 @@ interface Props {
 const ImageBackground: React.FC<Props> = ({ imageURL, children }) => {
   return (
     <Flex minHeight="100vh">
-      <Box flex="0.4" backgroundColor="#ffffff" width="80vw">
+      <Box
+        flex="0.4"
+        backgroundColor="#ffffff"
+        width="80vw"
+        borderRight={"1px"}
+      >
         {children}
       </Box>
       <Box
