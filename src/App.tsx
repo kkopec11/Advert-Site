@@ -18,36 +18,68 @@ import "./styles.css";
 import GradientButton from "./components/buttons/GradientButton";
 import OneColorText from "./components/text/OneColorText";
 import ImageBackground from "./components/background/ImageBackground";
-import Background from "../src/assets/backgroundImages/namecheap/bg1.resized.jpg"; //1-5
 import BackgroundText from "../src/assets/backgroundImages/namecheap/bg1.text.sized.png";
-import BackgroundVertical from "../src/assets/backgroundImages/namecheap/bg.vertical.png";
+import BackgroundTextTop from "../src/assets/backgroundImages/namecheap/bg1.text.top.png";
+import BackgroundNoText from "../src/assets/backgroundImages/namecheap/bg1.notext.png";
+
+const Navbar = () => {
+  <HStack gap={6}>
+    <Text
+      fontSize={"18px"}
+      bgColor={"#000000"}
+      bgGradient={"linear(to-br,#b15200, #be4ca3)"}
+      // _hover={{
+      //   bgGradient: "linear(to-br,#b15200, #be4ca3)",
+      // }}
+      bgClip="text"
+    >
+      Strona Główna
+    </Text>
+    <OneColorText>Fotoksiążka</OneColorText>
+    <OneColorText>O Nas</OneColorText>
+    <OneColorText>Kontakt</OneColorText>
+  </HStack>;
+};
 
 export const App = () => (
   <ChakraProvider theme={theme}>
-    <ImageBackground imageURL={BackgroundVertical}>
-      <HStack justifyContent={"space-between"} width={"95%"}>
-        <Box>
-          <Logo width={"100%"} height={"100%"} />
-        </Box>
-        <HStack gap={6}>
-          <Text
-            fontSize={"18px"}
-            bgColor={"#000000"}
-            bgGradient={"linear(to-br,#b15200, #be4ca3)"}
-            // _hover={{
-            //   bgGradient: "linear(to-br,#b15200, #be4ca3)",
-            // }}
-            bgClip="text"
-          >
-            Strona Główna
+    <ImageBackground imageURL={BackgroundNoText}>
+      <Center paddingTop={3}>
+        <Logo width={"100%"} height={"100%"} />
+      </Center>
+      <Box
+        width={"30%"}
+        height={"60%"}
+        borderRadius={"12px"}
+        zIndex={1}
+        position={"absolute"}
+        left={20}
+        top={40}
+        padding={5}
+        // bgColor={"red"}
+        shadow={"dark-lg"}
+        backdropFilter={"auto"}
+        backdropBlur={"5px"}
+      >
+        <Flex flexDirection={"column"}>
+          <Text fontSize={"3xl"} as={"b"}>
+            Poznaj naszą ofertę:
           </Text>
-          {/* <OneColorText >Strona Główna</OneColorText> */}
-          <OneColorText>Fotoksiążka</OneColorText>
-          <OneColorText>O Nas</OneColorText>
-          <OneColorText>Kontakt</OneColorText>
-        </HStack>
-      </HStack>
-      <Center width={"100%"}>
+        </Flex>
+        <Text paddingTop={5} width={"80%"} color={"gray"}>
+          Non alias commodi nam vitae inventore et laboriosam reiciendis et
+          autem nobis sed facilis atque eum.
+        </Text>
+        <VStack width={"100%"} paddingTop={55}>
+          <Text fontSize={"22px"} as={"b"}>
+            Sprawdź naszą fotoksiążkę!
+          </Text>
+          <Center width={"auto"} paddingTop={5}>
+            <GradientButton>FOTOKSIĄŻKA</GradientButton>
+          </Center>
+        </VStack>
+      </Box>
+      {/* <Center width={"100%"}>
         <Divider
           width={"95%"}
           marginTop={3}
@@ -72,7 +104,7 @@ export const App = () => (
             <GradientButton>FOTOKSIĄŻKA</GradientButton>
           </Center>
         </Box>
-      </Flex>
+      </Flex> */}
     </ImageBackground>
   </ChakraProvider>
 );

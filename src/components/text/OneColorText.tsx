@@ -8,7 +8,8 @@ interface ChildrenProps {
 const OneColorText: React.FC<ChildrenProps> = ({ children }) => {
   return (
     <Text
-      fontSize={"18px"}
+      fontSize={"22px"}
+      fontWeight={500}
       bgColor={"#000000"}
       _hover={{
         // bgColor: "#EB6E00",
