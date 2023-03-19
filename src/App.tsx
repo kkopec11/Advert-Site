@@ -25,7 +25,7 @@ import BackgroundVertical from "../src/assets/backgroundImages/namecheap/bg.vert
 export const App = () => (
   <ChakraProvider theme={theme}>
     <ImageBackground imageURL={BackgroundVertical}>
-      <HStack justifyContent={"space-between"} width={"90%"}>
+      <HStack justifyContent={"space-between"} width={"95%"}>
         <Box>
           <Logo width={"100%"} height={"100%"} />
         </Box>
@@ -48,7 +48,12 @@ export const App = () => (
         </HStack>
       </HStack>
       <Center width={"100%"}>
-        <Divider width={"95%"} />
+        <Divider
+          width={"95%"}
+          marginTop={3}
+          orientation="horizontal"
+          borderColor={"#36231D"}
+        />
       </Center>
       <Flex paddingTop={20} paddingLeft={10} flexDirection={"column"}>
         <Text fontSize={"4xl"} as={"b"}>
