@@ -65,7 +65,6 @@ export const App = () => (
             boxShadow={"dark-lg"}
             borderRadius={"20px"}
             bgColor={"#fff6ef"}
-            border={"1px"}
             p={5}
           >
             <Text
