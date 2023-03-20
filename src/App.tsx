@@ -68,7 +68,12 @@ export const App = () => (
             border={"1px"}
             p={5}
           >
-            <Text fontSize={"4xl"} as={"b"}>
+            <Text
+              fontSize={"4xl"}
+              as={"b"}
+              bgClip={"text"}
+              bgGradient={"linear(to-br,#b15200, #be4ca3)"}
+            >
               Poznaj naszą ofertę:
             </Text>
             <Text paddingTop={5} width={"60%"} color={"gray"}>
