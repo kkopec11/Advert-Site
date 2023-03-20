@@ -9,7 +9,7 @@ interface Props {
 const ImageBackground: React.FC<Props> = ({ imageURL, children }) => {
   return (
     <Flex minHeight="100vh">
-      <Box flex="2" bgColor={"#fff6ef"} width="80vw">
+      <Box flex="2" bgColor={"#fff6ef"} width="80vw" borderRight={"2px"}>
         {children}
       </Box>
       <Box
