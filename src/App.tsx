@@ -79,7 +79,11 @@ export const App = () => (
               autem nobis sed facilis atque eum illum quia quo optio molestiae?
               In tempora quis sit molestiae saepe qui ducimus aliquam.
             </Text>
-            <Center width={"100%"} flexDirection={"column"}>
+            <Center
+              width={"100%"}
+              flexDirection={"column"}
+              color={fontDefaultColor}
+            >
               <Text paddingTop={35} fontSize={"20px"} fontWeight={500}>
                 Chcesz obejrzeć naszą fotosiążkę? Kliknij poniżej:
               </Text>
