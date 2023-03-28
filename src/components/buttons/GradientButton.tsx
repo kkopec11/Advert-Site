@@ -1,5 +1,6 @@
 import React, { Children } from "react";
 import { Box } from "@chakra-ui/react";
+import { fontButton, gradientColor1, gradientColor2 } from "../../config";
 
 interface ChildrenProps {
   children: string;
@@ -11,14 +12,13 @@ const GradientButton: React.FC<ChildrenProps> = ({ children }) => {
       boxShadow={"xl"}
       as="button"
       p={4}
-      //   color="black"
-      color="white"
+      color={fontButton}
       fontWeight="bold"
       borderRadius="40px"
-      bgGradient="linear(to-br, #ffa95e, #c284b3)"
+      bgGradient={gradientColor1}
       _hover={{
-        bgGradient: "linear(to-br,#b15200, #be4ca3)",
-        color: "white",
+        bgGradient: gradientColor2,
+        color: fontButton,
         boxShadow: "dark-lg",
       }}
     >

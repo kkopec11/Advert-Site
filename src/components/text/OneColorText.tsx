@@ -1,5 +1,6 @@
 import React from "react";
 import { Text } from "@chakra-ui/react";
+import { fontDefaultColor, gradientColor2 } from "../../config";
 
 interface ChildrenProps {
   children: string;
@@ -9,10 +10,9 @@ const OneColorText: React.FC<ChildrenProps> = ({ children }) => {
   return (
     <Text
       fontSize={"18px"}
-      bgColor={"#000000"}
+      bgColor={fontDefaultColor}
       _hover={{
-        // bgColor: "#EB6E00",
-        bgGradient: "linear(to-br,#b15200, #be4ca3)",
+        bgGradient: gradientColor2,
       }}
       bgClip="text"
     >
