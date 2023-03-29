@@ -30,8 +30,7 @@ import {
   showMainText,
   gradientColor2,
 } from "./config";
-import MainText from "./components/text/MainText";
-import PopupText from "./components/text/PopupText";
+import HomeView from "./views/HomeView";
 
 export const App = () => (
   <ChakraProvider theme={theme}>
@@ -64,7 +63,7 @@ export const App = () => (
         />
       </Center>
       <Center width={"100%"}>
-        {showMainText ? <MainText /> : <PopupText />}
+        <HomeView />
       </Center>
     </ImageBackground>
   </ChakraProvider>
