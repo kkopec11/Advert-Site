@@ -9,3 +9,6 @@ export const fontButton = "#FFFFFF";
 // #4ca5ff,#b673f8
 // #FF4CC2, #b673f8
 // #FF4CC2, #4ca5ff
+//#f998d9
+
+export const showMainText = true;

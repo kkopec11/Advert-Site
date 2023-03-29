@@ -27,7 +27,11 @@ import {
   dividerColor,
   fontDefaultColor,
   fontDefaultColor2,
+  showMainText,
+  gradientColor2,
 } from "./config";
+import MainText from "./components/text/MainText";
+import PopupText from "./components/text/PopupText";
 
 export const App = () => (
   <ChakraProvider theme={theme}>
@@ -40,7 +44,7 @@ export const App = () => (
           <Text
             fontSize={"18px"}
             bgColor={fontDefaultColor}
-            bgGradient={gradientColor1}
+            bgGradient={gradientColor2}
             bgClip="text"
           >
             Strona Główna
@@ -54,45 +58,13 @@ export const App = () => (
         <Divider
           width={"95%"}
           marginTop={3}
+          marginBottom={3}
           orientation="horizontal"
           borderColor={dividerColor}
         />
       </Center>
-      <Center paddingTop={10} width={"100%"}>
-        <Flex flexDirection={"column"} width={"70%"}>
-          <Box
-            boxShadow={"dark-lg"}
-            borderRadius={"20px"}
-            bgColor={backgroundColor}
-            p={5}
-          >
-            <Text
-              fontSize={"4xl"}
-              as={"b"}
-              bgClip={"text"}
-              bgGradient={gradientColor1}
-            >
-              Poznaj naszą ofertę:
-            </Text>
-            <Text paddingTop={5} width={"60%"} color={fontDefaultColor2}>
-              Non alias commodi nam vitae inventore et laboriosam reiciendis et
-              autem nobis sed facilis atque eum illum quia quo optio molestiae?
-              In tempora quis sit molestiae saepe qui ducimus aliquam.
-            </Text>
-            <Center
-              width={"100%"}
-              flexDirection={"column"}
-              color={fontDefaultColor}
-            >
-              <Text paddingTop={35} fontSize={"20px"} fontWeight={500}>
-                Chcesz obejrzeć naszą fotosiążkę? Kliknij poniżej:
-              </Text>
-              <Center width={"auto"} paddingTop={5}>
-                <GradientButton>FOTOKSIĄŻKA</GradientButton>
-              </Center>
-            </Center>
-          </Box>
-        </Flex>
+      <Center width={"100%"}>
+        {showMainText ? <MainText /> : <PopupText />}
       </Center>
     </ImageBackground>
   </ChakraProvider>
