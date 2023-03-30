@@ -24,7 +24,7 @@ import PhoneButton from "../components/buttons/PhoneButton";
 import { GradientGift } from "../components/icons/GradientGift";
 import { QuestionMark } from "../components/icons/QuestionMark";
 import { PhotoIcon } from "../components/icons/PhotoIcon";
-import HomeView from "./HomeView";
+import HomeView from "./HomeView/HomeView";
 import Sessions from "./Sessions";
 
 const Container = () => {

@@ -18,15 +18,16 @@ import {
   dividerColor,
   fontDefaultColor,
   fontDefaultColor2,
-} from "../config";
-import GradientButton from "../components/buttons/GradientButton";
-import PopupText from "../components/text/PopupText";
-import PhoneButton from "../components/buttons/PhoneButton";
-import { GradientGift } from "../components/icons/GradientGift";
-import { QuestionMark } from "../components/icons/QuestionMark";
-import { PhotoIcon } from "../components/icons/PhotoIcon";
+} from "../../config";
+import GradientButton from "../../components/buttons/GradientButton";
+import PopupText from "../../components/text/PopupText";
+import PhoneButton from "../../components/buttons/PhoneButton";
+import { GradientGift } from "../../components/icons/GradientGift";
+import { QuestionMark } from "../../components/icons/QuestionMark";
+import { PhotoIcon } from "../../components/icons/PhotoIcon";
+import BuyPhotobook from "../../components/section/BuyPhotobook";
 
-const HomeView = ({
+const Version1 = ({
   view,
   setView,
 }: {
@@ -34,7 +35,7 @@ const HomeView = ({
   setView: (view: string) => void;
 }) => {
   return (
-    <VStack>
+    <>
       <VStack>
         <Box borderRadius={"20px"} bgColor={backgroundColor} p={5}>
           <Text
@@ -85,26 +86,9 @@ const HomeView = ({
           </Flex>
         </Box>
       </VStack>
-      <Center
-        width={"100%"}
-        flexDirection={"column"}
-        color={fontDefaultColor}
-        paddingTop={5}
-      >
-        <Text fontSize={"20px"} fontWeight={500}>
-          Chcesz obejrzeć naszą przykładową
-          <Text as={"b"} bgClip={"text"} bgGradient={gradientColor1}>
-            {" "}
-            fotosiążkę
-          </Text>
-          ? Kliknij poniżej:
-        </Text>
-        <Center width={"auto"} paddingTop={5}>
-          <GradientButton>FOTOKSIĄŻKA</GradientButton>
-        </Center>
-      </Center>
-    </VStack>
+      <BuyPhotobook />
+    </>
   );
 };
 
-export default HomeView;
+export default Version1;

@@ -29,7 +29,7 @@ import {
   showMainText,
   gradientColor2,
 } from "./config";
-import HomeView from "./views/HomeView";
+import HomeView from "./views/HomeView/HomeView";
 import Container from "./views/Container";
 
 export const App = () => (
