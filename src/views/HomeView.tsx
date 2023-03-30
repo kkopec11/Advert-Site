@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   ChakraProvider,
   Box,
@@ -20,14 +20,19 @@ import {
   fontDefaultColor2,
 } from "../config";
 import GradientButton from "../components/buttons/GradientButton";
-import MainText from "../components/text/MainText";
 import PopupText from "../components/text/PopupText";
 import PhoneButton from "../components/buttons/PhoneButton";
 import { GradientGift } from "../components/icons/GradientGift";
 import { QuestionMark } from "../components/icons/QuestionMark";
 import { PhotoIcon } from "../components/icons/PhotoIcon";
 
-const HomeView = () => {
+const HomeView = ({
+  view,
+  setView,
+}: {
+  view: string;
+  setView: (view: string) => void;
+}) => {
   return (
     <VStack>
       <VStack>
@@ -60,7 +65,11 @@ const HomeView = () => {
                 sesji domowych.
               </Text>
             </Text>
-            <button>
+            <button
+              onClick={() => {
+                setView("sessions");
+              }}
+            >
               <Box width={"30px"}>
                 <PhotoIcon />
               </Box>
@@ -94,7 +103,6 @@ const HomeView = () => {
           <GradientButton>FOTOKSIĄŻKA</GradientButton>
         </Center>
       </Center>
-      {/* {false ? <MainText /> : <PopupText />} */}
     </VStack>
   );
 };

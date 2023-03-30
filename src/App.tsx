@@ -9,7 +9,6 @@ import {
   Divider,
   Flex,
   Center,
-  Container,
   VStack,
 } from "@chakra-ui/react";
 import { Logo } from "./components/logo/Logo";
@@ -31,6 +30,7 @@ import {
   gradientColor2,
 } from "./config";
 import HomeView from "./views/HomeView";
+import Container from "./views/Container";
 
 export const App = () => (
   <ChakraProvider theme={theme}>
@@ -63,7 +63,7 @@ export const App = () => (
         />
       </Center>
       <Center width={"100%"}>
-        <HomeView />
+        <Container />
       </Center>
     </ImageBackground>
   </ChakraProvider>
