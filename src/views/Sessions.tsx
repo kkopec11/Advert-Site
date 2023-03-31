@@ -207,7 +207,7 @@ const Sessions = ({
           </Flex>
         </Box>
       </Flex>
-      <Center flexDirection={"column"}>
+      <Center flexDirection={"column"} paddingTop={2}>
         <Text>
           Zarezerwuj termin swojej sesji – zadzwoń tel.{" "}
           {

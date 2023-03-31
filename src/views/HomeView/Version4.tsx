@@ -37,7 +37,7 @@ const Version4 = ({
 }) => {
   return (
     <>
-      <Box borderRadius={"20px"} bgColor={backgroundColor} p={5}>
+      <VStack borderRadius={"20px"} bgColor={backgroundColor} p={5}>
         <Text
           fontSize={"4xl"}
           as={"b"}
@@ -53,24 +53,25 @@ const Version4 = ({
             Uwieczniamy w kadrach Waszą codzienność.
           </Text>
         </Text>
-        <Text width={"70%"}>
+        {/* <Text width={"70%"}>
           Wspólna zabawa, przytulanie, wygłupy uchwycone na zdjęciach będą dla
           Was pamiątką, do której z przyjemnością wracać będziecie po latach.
-        </Text>
-      </Box>
+        </Text> */}
+      </VStack>
       <VStack
         fontWeight={700}
         fontSize={"26px"}
         width="100%"
         justifyContent={"center"}
         alignItems={"center"}
-        gap={7}
+        gap={14}
+        height={"100%"}
+        paddingTop={10}
       >
         <HStack
           alignItems={"flex-end"}
           width={"70%"}
           justifyContent={"space-around"}
-          paddingTop={10}
         >
           <HStack paddingTop={5} alignItems={"flex-end"}>
             <Text as={"b"} bgClip={"text"} bgGradient={gradientColor1}>

@@ -12,9 +12,10 @@ const PhoneButton: React.FC<ChildrenProps> = ({ children }) => {
     <Box
       boxShadow={"md"}
       as="button"
-      p={3}
+      p={2}
+      fontSize={"15px"}
       color={fontButton}
-      fontWeight="bold"
+      fontWeight={700}
       borderRadius="40px"
       bgGradient={gradientColor1}
       _hover={{
