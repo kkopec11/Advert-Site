@@ -94,7 +94,11 @@ const Version3 = ({
           <Text as={"b"} bgClip={"text"} bgGradient={gradientColor1}>
             Dlaczego my?
           </Text>
-          <button>
+          <button
+            onClick={() => {
+              setView("whywe");
+            }}
+          >
             <Box width={"30px"}>
               <QuestionMark />
             </Box>

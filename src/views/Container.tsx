@@ -26,6 +26,7 @@ import { QuestionMark } from "../components/icons/QuestionMark";
 import { PhotoIcon } from "../components/icons/PhotoIcon";
 import HomeView from "./HomeView/HomeView";
 import Sessions from "./Sessions";
+import WhyWe from "./WhyWe";
 
 const Container = () => {
   const [view, setView] = useState("home");
@@ -34,6 +35,7 @@ const Container = () => {
     <>
       {view === "home" && <HomeView view={view} setView={setView} />}
       {view === "sessions" && <Sessions view={view} setView={setView} />}
+      {view === "whywe" && <WhyWe view={view} setView={setView} />}
     </>
     //: (
     // <Offers/>

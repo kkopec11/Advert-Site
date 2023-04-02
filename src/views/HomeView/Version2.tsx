@@ -79,7 +79,11 @@ const Version2 = ({
         </HStack>
         <HStack>
           <Text>Dlaczego my?</Text>
-          <button>
+          <button
+            onClick={() => {
+              setView("whywe");
+            }}
+          >
             <Box width={"30px"}>
               <QuestionMark />
             </Box>

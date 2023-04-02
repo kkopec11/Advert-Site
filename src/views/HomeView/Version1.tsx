@@ -78,7 +78,11 @@ const Version1 = ({
           </Flex>
           <Flex gap={1} paddingTop={1}>
             <Text fontWeight={500}>Dlaczego my?</Text>
-            <button>
+            <button
+              onClick={() => {
+                setView("whywe");
+              }}
+            >
               <Box width={"30px"}>
                 <QuestionMark />
               </Box>
