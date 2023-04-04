@@ -25,6 +25,7 @@ import PhoneButton from "../../components/buttons/PhoneButton";
 import { GradientGift } from "../../components/icons/GradientGift";
 import { QuestionMark } from "../../components/icons/QuestionMark";
 import { PhotoIcon } from "../../components/icons/PhotoIcon";
+import { Link } from "react-router-dom";
 
 const BuyPhotobook = () => {
   return (
@@ -43,7 +44,9 @@ const BuyPhotobook = () => {
         ? Kliknij poniżej:
       </Text>
       <Center width={"auto"} paddingTop={5}>
-        <GradientButton>FOTOKSIĄŻKA</GradientButton>
+        <Link to="/fotoksiazka">
+          <GradientButton>FOTOKSIĄŻKA</GradientButton>
+        </Link>
       </Center>
     </Center>
   );
