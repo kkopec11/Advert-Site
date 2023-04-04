@@ -17,14 +17,14 @@ import {
   dividerColor,
   fontDefaultColor,
   fontDefaultColor2,
-} from "../config";
-import GradientButton from "../components/buttons/GradientButton";
-import PopupText from "../components/text/PopupText";
-import PhoneButton from "../components/buttons/PhoneButton";
-import { GradientGift } from "../components/icons/GradientGift";
-import { QuestionMark } from "../components/icons/QuestionMark";
-import { PhotoIcon } from "../components/icons/PhotoIcon";
-import HomeView from "./HomeView/HomeView";
+} from "../../../config";
+import GradientButton from "../../../components/buttons/GradientButton";
+import PopupText from "../../../components/text/PopupText";
+import PhoneButton from "../../../components/buttons/PhoneButton";
+import { GradientGift } from "../../../components/icons/GradientGift";
+import { QuestionMark } from "../../../components/icons/QuestionMark";
+import { PhotoIcon } from "../../../components/icons/PhotoIcon";
+import HomeView from "../HomeView";
 import Sessions from "./Sessions";
 import WhyWe from "./WhyWe";
 

@@ -29,11 +29,11 @@ import {
   backgroundColor,
   dividerColor,
   fontDefaultColor,
-} from "../config";
-import { GradientArrow } from "../components/icons/GradientArrow";
-import PhoneButton from "../components/buttons/PhoneButton";
-import { QuestionMark } from "../components/icons/QuestionMark";
-import { GradientGift } from "../components/icons/GradientGift";
+} from "../../../config";
+import { GradientArrow } from "../../../components/icons/GradientArrow";
+import PhoneButton from "../../../components/buttons/PhoneButton";
+import { QuestionMark } from "../../../components/icons/QuestionMark";
+import { GradientGift } from "../../../components/icons/GradientGift";
 import { FaArrowCircleLeft } from "react-icons/fa";
 
 const Sessions = ({

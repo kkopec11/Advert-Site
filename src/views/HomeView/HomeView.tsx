@@ -26,10 +26,10 @@ import { GradientGift } from "../../components/icons/GradientGift";
 import { QuestionMark } from "../../components/icons/QuestionMark";
 import { PhotoIcon } from "../../components/icons/PhotoIcon";
 import BuyPhotobook from "../../components/section/BuyPhotobook";
-import Version1 from "./Version1";
-import Version2 from "./Version2";
-import Version3 from "./Version3";
-import Version4 from "./Version4";
+import Version1 from "./components/versions/Version1";
+import Version2 from "./components/versions/Version2";
+import Version3 from "./components/versions/Version3";
+import Version4 from "./components/versions/Version4";
 
 let version = "version1";
 // let version = "version2";
