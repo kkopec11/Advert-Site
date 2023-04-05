@@ -1,15 +1,32 @@
 import * as React from "react";
-import { Box, HStack, Text, Divider, Center, Flex } from "@chakra-ui/react";
+import {
+  Box,
+  HStack,
+  Text,
+  Divider,
+  Center,
+  Flex,
+  VStack,
+} from "@chakra-ui/react";
 import { Logo } from "../../components/logo/Logo";
-import ImageBackground from "../../components/background/ImageBackground";
-import Background from "../../../src/assets/backgroundImages/namecheap/bg1.resized.jpg"; //1-5
 import { backgroundColor, dividerColor } from "../../config";
 import NavBar from "../../components/section/NavBar";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/effect-fade";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
+// import required modules
+import { EffectFade, Navigation, Pagination } from "swiper";
 
 const PhotoBook = () => {
   return (
     <Flex minHeight="100vh">
-      <Box bgColor={backgroundColor} width="100vw" borderRight={"2px"}>
+      <Box bgColor={backgroundColor} width="100vw">
         <HStack justifyContent={"space-between"} width={"95%"}>
           <Box>
             <Logo width={"100%"} height={"100%"} />
@@ -25,9 +42,33 @@ const PhotoBook = () => {
             borderColor={dividerColor}
           />
         </Center>
-        <Center width={"100%"}>
+        <VStack>
           <Text>FOTOKSIĄŻKA</Text>
-        </Center>
+          <Box width="400px">
+            <Swiper
+              spaceBetween={30}
+              effect={"fade"}
+              navigation={true}
+              pagination={{
+                clickable: true,
+              }}
+              modules={[EffectFade, Navigation, Pagination]}
+            >
+              <SwiperSlide>
+                <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+              </SwiperSlide>
+            </Swiper>
+          </Box>
+        </VStack>
       </Box>
     </Flex>
   );
