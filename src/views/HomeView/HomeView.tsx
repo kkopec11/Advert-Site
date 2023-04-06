@@ -30,8 +30,9 @@ import Version1 from "./components/versions/Version1";
 import Version2 from "./components/versions/Version2";
 import Version3 from "./components/versions/Version3";
 import Version4 from "./components/versions/Version4";
+import Version5 from "./components/versions/Version5";
 
-let version = "version1";
+let version = "version5";
 // let version = "version2";
 // let version = "version3";
 // let version = "version4";
@@ -49,6 +50,8 @@ const HomeView = ({
       {version === "version2" && <Version2 view={view} setView={setView} />}
       {version === "version3" && <Version3 view={view} setView={setView} />}
       {version === "version4" && <Version4 view={view} setView={setView} />}
+      {version === "version5" && <Version5 view={view} setView={setView} />}
+      {version === "version6" && <Version5 view={view} setView={setView} />}
     </VStack>
   );
 };
