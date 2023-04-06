@@ -31,11 +31,9 @@ import Version2 from "./components/versions/Version2";
 import Version3 from "./components/versions/Version3";
 import Version4 from "./components/versions/Version4";
 import Version5 from "./components/versions/Version5";
+import Version6 from "./components/versions/Version6";
 
-let version = "version5";
-// let version = "version2";
-// let version = "version3";
-// let version = "version4";
+let version = "version6"; // V: 1 - 6
 
 const HomeView = ({
   view,
@@ -51,7 +49,7 @@ const HomeView = ({
       {version === "version3" && <Version3 view={view} setView={setView} />}
       {version === "version4" && <Version4 view={view} setView={setView} />}
       {version === "version5" && <Version5 view={view} setView={setView} />}
-      {version === "version6" && <Version5 view={view} setView={setView} />}
+      {version === "version6" && <Version6 view={view} setView={setView} />}
     </VStack>
   );
 };
