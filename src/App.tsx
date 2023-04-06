@@ -11,10 +11,10 @@ import Fonts from "./Fonts";
 import "@fontsource/linden-hill";
 
 const theme = extendTheme({
-  fonts: {
-    heading: `'MartaFont'`,
-    body: `'MartaFont'`,
-  },
+  // fonts: {
+  //   heading: `'MartaFont'`,
+  //   body: `'MartaFont'`,
+  // },
   // fonts: {
   //   heading: `'Linden Hill' `,
   //   body: `'Linden Hill' `,
