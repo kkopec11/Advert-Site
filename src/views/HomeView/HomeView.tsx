@@ -33,7 +33,7 @@ import Version4 from "./components/versions/Version4";
 import Version5 from "./components/versions/Version5";
 import Version6 from "./components/versions/Version6";
 
-let version = "version6"; // V: 1 - 6
+let version = "version1"; // V: 1 - 6
 
 const HomeView = ({
   view,
