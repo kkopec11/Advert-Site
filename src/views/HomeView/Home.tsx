@@ -10,6 +10,7 @@ import {
   Flex,
   Center,
   VStack,
+  Container,
 } from "@chakra-ui/react";
 import { Logo } from "../../components/logo/Logo";
 import { GradientLogo } from "../../components/logo/GradientLogo";
@@ -29,32 +30,87 @@ import {
   gradientColor2,
 } from "../../config";
 import HomeView from "../../views/HomeView/HomeView";
-import Container from "./components/Container";
 import { Link } from "react-router-dom";
 import NavBar from "../../components/section/NavBar";
 
 const Home = () => {
   return (
-    <ImageBackground imageURL={Background}>
-      <HStack justifyContent={"space-between"} width={"95%"}>
-        <Box>
-          <Logo width={"100%"} height={"100%"} />
+    <Box
+    // fontSize="xl"
+    // p={5}
+    // backgroundImage={`url(${Background})`}
+    // height="full"
+    // width={"full"}
+    // backdropBlur={"5px"}
+    // backdropFilter={"auto"}
+    >
+      <Center width={"100%"}>
+        <HStack
+          justifyContent={"space-between"}
+          backgroundColor={"#08f35edc"}
+          // backdropFilter={"auto"}
+          // backdropBlur={"5px"}
+          // borderRadius="15px"
+          // boxShadow={"dark-lg"}
+          position={"fixed"}
+          // paddingTop={"100px"}
+          width={"100%"}
+          zIndex={1}
+        >
+          <Box height={"200px"}>
+            <Logo width={"100%"} height={"100%"} />
+          </Box>
+
+          <HStack gap={50} paddingRight={55}>
+            <OneColorText>Strona Główna</OneColorText>
+            <OneColorText>Fotoksiążka</OneColorText>
+            <OneColorText>O Nas</OneColorText>
+            <OneColorText>Kontakt</OneColorText>
+          </HStack>
+        </HStack>
+      </Center>
+      {/* <Center paddingTop={150}>
+        <Box
+          borderRadius="15px"
+          width={"80%"}
+          boxShadow={"dark-lg"}
+          backdropFilter={"auto"}
+          backdropBlur={"5px"}
+        >
+          <Container>
+            <Center paddingTop={10}>
+              <Text>Lorem ipsum dolor sit amet.</Text>
+            </Center>
+            <Text paddingTop={10}>
+              Non alias commodi nam vitae inventore et laboriosam reiciendis et
+              autem nobis sed facilis atque eum illum quia quo optio molestiae?
+              In tempora quis sit molestiae saepe qui ducimus aliquam. Qui totam
+              unde qui optio nesciunt ut dolores unde.
+            </Text>
+            <Text paddingTop={10} paddingBottom={10}>
+              Est quas dignissimos ut sapiente quia ab fuga provident eum autem
+              sint non tempore officia. Sed autem dolor vel reprehenderit fuga
+              qui vero quasi id voluptate ipsam aut veniam consequatur est
+              suscipit optio nam aliquam magnam. Est iure eveniet vel aperiam
+              repudiandae in assumenda nihil quo excepturi nihil aut quibusdam
+              expedita aut optio dignissimos. Qui odit tempore qui recusandae
+              optio in explicabo nemo eos nulla accusamus est galisum facilis ea
+              sint odio aut dignissimos beatae.
+            </Text>
+            <Text paddingBottom={10}>
+              Est quas dignissimos ut sapiente quia ab fuga provident eum autem
+              sint non tempore officia. Sed autem dolor vel reprehenderit fuga
+              qui vero quasi id voluptate ipsam aut veniam consequatur est
+              suscipit optio nam aliquam magnam. Est iure eveniet vel aperiam
+              repudiandae in assumenda nihil quo excepturi nihil aut quibusdam
+              expedita aut optio dignissimos. Qui odit tempore qui recusandae
+              optio in explicabo nemo eos nulla accusamus est galisum facilis ea
+              sint odio aut dignissimos beatae.
+            </Text>
+          </Container>
         </Box>
-        <NavBar />
-      </HStack>
-      <Center width={"100%"}>
-        <Divider
-          width={"95%"}
-          marginTop={3}
-          marginBottom={3}
-          orientation="horizontal"
-          borderColor={dividerColor}
-        />
-      </Center>
-      <Center width={"100%"}>
-        <Container />
-      </Center>
-    </ImageBackground>
+      </Center> */}
+    </Box>
   );
 };
 
