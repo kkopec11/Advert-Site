@@ -23,6 +23,7 @@ import {
   PopoverArrow,
   PopoverCloseButton,
   PopoverAnchor,
+  Image,
 } from "@chakra-ui/react";
 import {
   gradientColor1,
@@ -101,6 +102,11 @@ const Sessions = ({}: {}) => {
             Ze zwierzętami - psami i kotami
           </ListItem>
         </List>
+        <Center padding={5}>
+          <Box width="50%">
+            <Image src="/photo1.jpg" />
+          </Box>
+        </Center>
         <Box width={"78%"}>
           {/* <Text paddingTop={1}>
                 Wspólna zabawa, przytulanie, wygłupy uchwycone na zdjęciach będą
