@@ -36,13 +36,7 @@ import { QuestionMark } from "../../../components/icons/QuestionMark";
 import { GradientGift } from "../../../components/icons/GradientGift";
 import { FaArrowCircleLeft } from "react-icons/fa";
 
-const WhyWe = ({
-  view,
-  setView,
-}: {
-  view: string;
-  setView: (view: string) => void;
-}) => {
+const WhyWe = ({}: {}) => {
   return (
     <Box color={fontDefaultColor} width={"100%"} height={"100%"}>
       <Flex flexDirection={"column"} paddingLeft={5} paddingRight={5}>
@@ -55,13 +49,6 @@ const WhyWe = ({
           >
             Dlaczego My?
           </Text>
-          <button
-            onClick={() => {
-              setView("home");
-            }}
-          >
-            <FaArrowCircleLeft color="grey" />
-          </button>
         </HStack>
         {/* <Text width={"75%"} paddingTop={1}>
           Budujemy wspomnienia – domowe sesje rodzinne to najpiękniejszy prezent

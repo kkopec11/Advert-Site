@@ -18,6 +18,9 @@ import {
 import { Logo } from "../../components/logo/Logo";
 import OneColorText from "../../components/text/OneColorText";
 import MainView from "./MainView";
+import Sessions from "../HomeView/components/Sessions";
+import WhyWe from "../HomeView/components/WhyWe";
+import BuyPhotobook from "../../components/section/BuyPhotobook";
 
 const OneView = () => {
   return (
@@ -26,7 +29,7 @@ const OneView = () => {
         <HStack
           justifyContent={"space-between"}
           backdropFilter={"auto"}
-          backdropBlur={"5px"}
+          backdropBlur={"15px"}
           position={"fixed"}
           paddingTop={100}
           width={"100%"}
@@ -46,9 +49,12 @@ const OneView = () => {
           </HStack>
         </HStack>
       </Center>
-      <Center paddingTop={150}>
+      <Box paddingTop={100}>
         <MainView />
-      </Center>
+        <Sessions />
+        <WhyWe />
+        <BuyPhotobook />
+      </Box>
     </Box>
   );
 };

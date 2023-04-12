@@ -34,8 +34,8 @@ const Container = () => {
   return (
     <>
       {view === "home" && <HomeView view={view} setView={setView} />}
-      {view === "sessions" && <Sessions view={view} setView={setView} />}
-      {view === "whywe" && <WhyWe view={view} setView={setView} />}
+      {view === "sessions" && <Sessions />}
+      {view === "whywe" && <WhyWe />}
     </>
     //: (
     // <Offers/>

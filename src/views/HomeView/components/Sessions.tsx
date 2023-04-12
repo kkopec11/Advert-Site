@@ -36,13 +36,7 @@ import { QuestionMark } from "../../../components/icons/QuestionMark";
 import { GradientGift } from "../../../components/icons/GradientGift";
 import { FaArrowCircleLeft } from "react-icons/fa";
 
-const Sessions = ({
-  view,
-  setView,
-}: {
-  view: string;
-  setView: (view: string) => void;
-}) => {
+const Sessions = ({}: {}) => {
   return (
     <Box color={fontDefaultColor}>
       <Flex flexDirection={"column"} padding={5}>
@@ -55,20 +49,11 @@ const Sessions = ({
           >
             Sesja domowa rodzinna – 12 ujęć po obróbce (900zł brutto)
           </Text>
-          <button
-            onClick={() => {
-              setView("home");
-            }}
-          >
-            <FaArrowCircleLeft color="grey" />
-          </button>
         </HStack>
         <Text width={"75%"} paddingTop={1}>
-          Budujemy wspomnienia – domowe sesje rodzinne to najpiękniejszy prezent
-          dla ludzi, którzy kochają się ponad wszystko.{" "}
-          <Text as={"b"} bgClip={"text"} bgGradient={gradientColor1}>
-            Uwieczniamy w kadrach Waszą codzienność.
-          </Text>
+          {/* Budujemy wspomnienia – domowe sesje rodzinne to najpiękniejszy prezent
+          dla ludzi, którzy kochają się ponad wszystko.{" "} */}
+          <Text>Uwieczniamy w kadrach Waszą codzienność.</Text>
           {/* Dla sesji poza Warszawą doliczany jest koszt dojazdu fotografa. (Szczegóły i stawkę
               ustalamy wtedy indywidualnie – nie bójcie się pytać, udało nam się to
               już nie raz!) Ceny zawierają czas pracy podczas sesji oraz przy post
@@ -124,87 +109,36 @@ const Sessions = ({
                   Waszą pamiątką,{" "}
                 </Text>
               </Text> */}
-          <Flex alignItems={"flex-end"} gap={2}>
-            <Text paddingTop={3} fontWeight={500}>
+          <Box gap={20}>
+            <Text paddingTop={1.5} fontWeight={500}>
               Efektem sesji jest 12 ujęć w formie cyfrowej po obróbce.
             </Text>
-            <Popover>
-              <PopoverTrigger>
-                <button>
-                  <Box>
-                    <QuestionMark />
-                  </Box>
-                </button>
-              </PopoverTrigger>
-              <PopoverContent>
-                <PopoverCloseButton />
-                <PopoverBody>
-                  <Box fontWeight={700} paddingRight={3}>
-                    <Text>
-                      Ceny zawierają czas pracy podczas sesji oraz przy post
-                      produkcji zdjęć, doświadczenie i talent fotografa, podatek
-                      VAT.
-                    </Text>
-                  </Box>
-                </PopoverBody>
-              </PopoverContent>
-            </Popover>
-          </Flex>
-          <Flex alignItems={"center"} gap={2} paddingTop={1}>
-            <Text fontWeight={500}>
-              Cena dotyczy sesji na terenie Warszawy.
+            <Text paddingTop={1.5}>
+              Ceny zawierają czas pracy podczas sesji oraz przy post
+              produkcji zdjęć, doświadczenie i talent fotografa, podatek VAT.
             </Text>
-            <Popover>
-              <PopoverTrigger>
-                <button>
-                  <Box>
-                    <QuestionMark />
-                  </Box>
-                </button>
-              </PopoverTrigger>
-              <PopoverContent>
-                <PopoverCloseButton />
-                <PopoverBody>
-                  <Box fontWeight={700} paddingRight={3}>
-                    <Text>
-                      Dla sesji poza Warszawą doliczany jest koszt dojazdu
-                      fotografa.
-                    </Text>
-                    <Text>
-                      Szczegóły i stawkę ustalamy wtedy indywidualnie – nie
-                      bójcie się pytać, udało nam się to już nie raz!
-                    </Text>
-                  </Box>
-                </PopoverBody>
-              </PopoverContent>
-            </Popover>
-          </Flex>
-          <Flex alignItems={"center"} gap={1} paddingTop={1}>
-            <Text fontWeight={500}>
+            <Text paddingTop={1.5}>
+              Cena dotyczy sesji na terenie Warszawy. Dla sesji poza Warszawą
+              doliczany jest koszt dojazdu fotografa.
+            </Text>
+            <Text fontWeight={500} paddingTop={1.5} paddingBottom={1.5}>
+              Szczegóły i stawkę ustalamy wtedy indywidualnie – nie bójcie się
+              pytać, udało nam się to już nie raz!
+            </Text>
+            <Text
+              as={"b"}
+              bgClip={"text"}
+              bgGradient={gradientColor1}
+              fontSize={"18px"}
+            >
               Przyjmujemy również zamówienia sesji rodzinnych w prezencie dla
               bliskich.
             </Text>
-            <Popover>
-              <PopoverTrigger>
-                <button>
-                  <Box width={"30px"}>
-                    <GradientGift />
-                  </Box>
-                </button>
-              </PopoverTrigger>
-              <PopoverContent>
-                <PopoverCloseButton />
-                <PopoverBody>
-                  <Box fontWeight={700} paddingRight={3}>
-                    <Text>
-                      Istnieje możliwość dokupienia ujęć poza limitem oferty za
-                      dodatkową opłatą.
-                    </Text>
-                  </Box>
-                </PopoverBody>
-              </PopoverContent>
-            </Popover>
-          </Flex>
+            <Text paddingTop={1.5}>
+              Istnieje możliwość dokupienia ujęć poza limitem oferty za
+              dodatkową opłatą.
+            </Text>
+          </Box>
         </Box>
       </Flex>
       <Center flexDirection={"column"} paddingTop={2}>

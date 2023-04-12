@@ -32,45 +32,27 @@ const MainView = () => {
             bgClip={"text"}
             bgGradient={gradientColor1}
           >
-            Fotoksiążki oraz sesje domowe
+            Budujemy wspomnienia
           </Text>
           <Text width={"80%"} paddingTop={5}>
-            Budujemy wspomnienia – domowe sesje rodzinne to najpiękniejszy
-            prezent dla ludzi, którzy kochają się ponad wszystko.{" "}
-            <Text as={"b"} bgClip={"text"} bgGradient={gradientColor1}>
-              Uwieczniamy w kadrach Waszą codzienność.
-            </Text>
+            Domowe sesje rodzinne to najpiękniejszy prezent dla ludzi, którzy
+            kochają się ponad wszystko.{" "}
+          </Text>
+          <Text
+            as={"b"}
+            bgClip={"text"}
+            bgGradient={gradientColor1}
+            fontSize={"18px"}
+          >
+            Uwieczniamy w kadrach Waszą codzienność.
           </Text>
           <Text width={"70%"}>
             Wspólna zabawa, przytulanie, wygłupy uchwycone na zdjęciach będą dla
             Was pamiątką, do której z przyjemnością wracać będziecie po latach i
             niezapomniane chwile zostaną z Wami na zawsze.
           </Text>
-          <Flex gap={1} paddingTop={1}>
-            <Text fontWeight={500}>
-              Dowiedz się więcej o naszej ofercie
-              <Text as={"b"} bgClip={"text"} bgGradient={gradientColor1}>
-                {" "}
-                sesji domowych.
-              </Text>
-            </Text>
-            <button>
-              <Box width={"30px"}>
-                <PhotoIcon />
-              </Box>
-            </button>
-          </Flex>
-          <Flex gap={1} paddingTop={1}>
-            <Text fontWeight={500}>Dlaczego my?</Text>
-            <button>
-              <Box width={"30px"}>
-                <QuestionMark />
-              </Box>
-            </button>
-          </Flex>
         </Box>
       </VStack>
-      {/* <BuyPhotobook /> */}
     </>
   );
 };

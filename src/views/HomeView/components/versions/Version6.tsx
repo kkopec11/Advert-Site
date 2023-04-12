@@ -241,7 +241,7 @@ const Version6 = ({
               </Box>
             </TabPanel>
             <TabPanel>
-              <WhyWe view={view} setView={setView} />
+              <WhyWe />
             </TabPanel>
           </TabPanels>
         </Tabs>
