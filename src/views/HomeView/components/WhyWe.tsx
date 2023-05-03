@@ -36,7 +36,7 @@ import { QuestionMark } from "../../../components/icons/QuestionMark";
 import { GradientGift } from "../../../components/icons/GradientGift";
 import { FaArrowCircleLeft } from "react-icons/fa";
 
-const WhyWe = ({}: {}) => {
+const WhyWe = () => {
   return (
     <Box color={fontDefaultColor} width={"100%"} height={"100%"}>
       <Flex flexDirection={"column"} paddingLeft={5} paddingRight={5}>

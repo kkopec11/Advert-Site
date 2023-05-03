@@ -9,7 +9,7 @@ interface ChildrenProps {
 const GradientButton: React.FC<ChildrenProps> = ({ children }) => {
   return (
     <Box
-      boxShadow={"xl"}
+      boxShadow={"2xl"}
       as="button"
       p={4}
       color={fontButton}

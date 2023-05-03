@@ -26,6 +26,7 @@ import { GradientGift } from "../../components/icons/GradientGift";
 import { QuestionMark } from "../../components/icons/QuestionMark";
 import { PhotoIcon } from "../../components/icons/PhotoIcon";
 import { Link } from "react-router-dom";
+import DivMotion from "../motion/DivMotion";
 
 const BuyPhotobook = () => {
   return (
@@ -34,6 +35,7 @@ const BuyPhotobook = () => {
       flexDirection={"column"}
       color={fontDefaultColor}
       paddingTop={5}
+      paddingBottom={5}
     >
       <Text fontSize={"20px"} fontWeight={500}>
         Obejrzyj projekt niezwykłej pamiątki, które na zawsze umożliwi wracać do
@@ -50,7 +52,9 @@ const BuyPhotobook = () => {
       <Center width={"auto"} paddingTop={5}>
         <Link to="/fotoksiazka">
           {/* <GradientButton>FOTOKSIĄŻKA</GradientButton> */}
-          <GradientButton>Zobacz Nasze Foto Książki</GradientButton>
+          <DivMotion>
+            <GradientButton>Zobacz Nasze Foto Książki</GradientButton>
+          </DivMotion>
         </Link>
       </Center>
     </Center>

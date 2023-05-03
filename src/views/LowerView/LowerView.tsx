@@ -4,6 +4,7 @@ import Sessions from "../HomeView/components/Sessions";
 import WhyWe from "../HomeView/components/WhyWe";
 import BuyPhotobook from "../../components/section/BuyPhotobook";
 import DescView from "../DescView/DescView";
+import Contact from "../../views/Contact/Contact";
 
 const LowerView = () => {
   return (
@@ -11,6 +12,7 @@ const LowerView = () => {
       <DescView />
       <Sessions />
       <WhyWe />
+      <Contact />
       {/* <BuyPhotobook /> */}
     </Center>
   );

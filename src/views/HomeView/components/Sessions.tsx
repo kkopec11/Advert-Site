@@ -37,7 +37,7 @@ import { QuestionMark } from "../../../components/icons/QuestionMark";
 import { GradientGift } from "../../../components/icons/GradientGift";
 import { FaArrowCircleLeft } from "react-icons/fa";
 
-const Sessions = ({}: {}) => {
+const Sessions = () => {
   return (
     <Box color={fontDefaultColor}>
       <Flex flexDirection={"column"} padding={5}>
@@ -52,19 +52,13 @@ const Sessions = ({}: {}) => {
           </Text>
         </HStack>
         <Text width={"75%"} paddingTop={1}>
-          {/* Budujemy wspomnienia – domowe sesje rodzinne to najpiękniejszy prezent
-          dla ludzi, którzy kochają się ponad wszystko.{" "} */}
-          <Text>Uwieczniamy w kadrach Waszą codzienność.</Text>
-          {/* Dla sesji poza Warszawą doliczany jest koszt dojazdu fotografa. (Szczegóły i stawkę
-              ustalamy wtedy indywidualnie – nie bójcie się pytać, udało nam się to
-              już nie raz!) Ceny zawierają czas pracy podczas sesji oraz przy post
-              produkcji zdjęć, doświadczenie i talent fotografa, podatek VAT. */}
-          {/* Istnieje możliwość dokupienia ujęć poza limitem oferty za dodatkową
-              opłatą. Przyjmujemy również zamówienia sesji rodzinnych w prezencie
-              dla bliskich.  */}
+          Budujemy wspomnienia – naturalne, domowe sesje rodzinne to
+          najpiękniejszy prezent dla ludzi, którzy kochają się ponad wszystko.
         </Text>
-
-        <Text>Sesja zdjęciowa w Waszym domu może być sesją:</Text>
+        <Text>
+          Uwieczniamy w kadrach Waszą codzienność. Sesja zdjęciowa w Waszym domu
+          może być sesją:
+        </Text>
         <List spacing={1}>
           <ListItem>
             <ListIcon
@@ -108,28 +102,28 @@ const Sessions = ({}: {}) => {
           </Box>
         </Center>
         <Box width={"78%"}>
-          {/* <Text paddingTop={1}>
-                Wspólna zabawa, przytulanie, wygłupy uchwycone na zdjęciach będą
-                <Text as={"b"} bgClip={"text"} bgGradient={gradientColor1}>
-                  {" "}
-                  Waszą pamiątką,{" "}
-                </Text>
-              </Text> */}
           <Box gap={20}>
-            <Text paddingTop={1.5} fontWeight={500}>
+            <Text paddingTop={1.5}>
+              Wspólna zabawa, przytulanie, wygłupy uchwycone na zdjęciach będą
+              dla Was pamiątką, do której z przyjemnością wracać będziecie po
+              latach i niezapomniane chwile zostaną z Wami na zawsze
+            </Text>
+            <Text paddingTop={1.5}>
               Efektem sesji jest 12 ujęć w formie cyfrowej po obróbce.
             </Text>
             <Text paddingTop={1.5}>
-              Ceny zawierają czas pracy podczas sesji oraz przy post
-              produkcji zdjęć, doświadczenie i talent fotografa, podatek VAT.
+              Cena dotyczy sesji na terenie Warszawy. Dla sesji poza Warszawą
+              doliczany jest koszt dojazdu fotografa. (Szczegóły i stawkę
+              ustalamy wtedy indywidualnie – nie bójcie się pytać, udało nam się
+              to już nie raz!)
             </Text>
             <Text paddingTop={1.5}>
-              Cena dotyczy sesji na terenie Warszawy. Dla sesji poza Warszawą
-              doliczany jest koszt dojazdu fotografa.
+              Ceny zawierają czas pracy podczas sesji oraz przy post produkcji
+              zdjęć, doświadczenie i talent fotografa, podatek VAT.
             </Text>
-            <Text fontWeight={500} paddingTop={1.5} paddingBottom={1.5}>
-              Szczegóły i stawkę ustalamy wtedy indywidualnie – nie bójcie się
-              pytać, udało nam się to już nie raz!
+            <Text paddingTop={1.5}>
+              Istnieje możliwość dokupienia ujęć poza limitem oferty za
+              dodatkową opłatą.
             </Text>
             <Text
               as={"b"}
@@ -139,10 +133,6 @@ const Sessions = ({}: {}) => {
             >
               Przyjmujemy również zamówienia sesji rodzinnych w prezencie dla
               bliskich.
-            </Text>
-            <Text paddingTop={1.5}>
-              Istnieje możliwość dokupienia ujęć poza limitem oferty za
-              dodatkową opłatą.
             </Text>
           </Box>
         </Box>
