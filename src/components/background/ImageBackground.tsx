@@ -9,29 +9,15 @@ interface Props {
 
 const ImageBackground: React.FC<Props> = ({ imageURL, children }) => {
   return (
-    <Flex minHeight="100vh">
+    <Flex height="100vh">
       <Box
         bgImage={`url(${imageURL})`}
         bgSize="cover"
-        bgPosition="right"
+        bgPosition="center"
         flex="1"
       >
         {children}
       </Box>
-      {/* <Box
-        flex="1"
-        backgroundColor="#ffffff"
-        // backgroundColor="#000000"
-      >
-        {
-          <Box paddingTop={5}>
-            <Navbar />
-            <Center paddingTop={20}>
-              <BottomText />
-            </Center>
-          </Box>
-        }
-      </Box> */}
     </Flex>
   );
 };

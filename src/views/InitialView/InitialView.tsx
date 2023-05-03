@@ -20,7 +20,7 @@ const InitialView = () => {
         </Box>
       </Flex>
       <Center color={"#FFFFFF"} flexDirection={"column"}>
-        <Text fontSize={"70px"} paddingRight={550}>
+        <Text fontSize={"70px"} paddingRight={550} color={"#000000"}>
           Tworzymy
         </Text>
         <Text
@@ -28,20 +28,16 @@ const InitialView = () => {
           fontWeight={600}
           paddingLeft={250}
           bgClip={"text"}
-          bgGradient={gradientColor1}
+          //   bgGradient={gradientColor1}
+          color={"#4ca5ff"}
+          //   color={"#FF4CC2"}
         >
           WSPOMNIENIA
         </Text>
       </Center>
-      <Center
-        width={"100%"}
-        height={"25%"}
-        zIndex={1}
-        position={"absolute"}
-        color={"white"}
-      >
+      <Center width={"100%"} height={"45%"} color={"white"}>
         <DivMotion>
-          <BsChevronDoubleDown size={"55px"} />
+          <BsChevronDoubleDown size={"85px"} />
         </DivMotion>
       </Center>
     </ImageBackground>

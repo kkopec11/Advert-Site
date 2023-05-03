@@ -26,8 +26,8 @@ const Navbar = () => {
             <Text
               fontSize={"22px"}
               fontWeight={700}
-              bgColor={"#FFFFFF"}
-              bgGradient={gradientColor1}
+              bgColor={"#4ca5ff"}
+              // bgGradient={gradientColor1}
               bgClip="text"
             >
               Strona Główna
