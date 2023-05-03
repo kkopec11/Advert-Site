@@ -36,16 +36,21 @@ const BuyPhotobook = () => {
       paddingTop={5}
     >
       <Text fontSize={"20px"} fontWeight={500}>
+        Obejrzyj projekt niezwykłej pamiątki, które na zawsze umożliwi wracać do
+        wspomnień z tych wyjątkowych chwil
+      </Text>
+      {/* <Text fontSize={"20px"} fontWeight={500}>
         Chcesz obejrzeć naszą przykładową
         <Text as={"b"} bgClip={"text"} bgGradient={gradientColor1}>
           {" "}
           fotosiążkę
         </Text>
         ? Kliknij poniżej:
-      </Text>
+      </Text> */}
       <Center width={"auto"} paddingTop={5}>
         <Link to="/fotoksiazka">
-          <GradientButton>FOTOKSIĄŻKA</GradientButton>
+          {/* <GradientButton>FOTOKSIĄŻKA</GradientButton> */}
+          <GradientButton>Zobacz Nasze Foto Książki</GradientButton>
         </Link>
       </Center>
     </Center>

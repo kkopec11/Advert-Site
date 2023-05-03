@@ -11,7 +11,7 @@ const LowerView = () => {
       <DescView />
       <Sessions />
       <WhyWe />
-      <BuyPhotobook />
+      {/* <BuyPhotobook /> */}
     </Center>
   );
 };
