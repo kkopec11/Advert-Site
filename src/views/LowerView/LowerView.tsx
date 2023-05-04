@@ -8,7 +8,7 @@ import Contact from "../../views/Contact/Contact";
 
 const LowerView = () => {
   return (
-    <Center paddingTop={10} flexDirection="column" width={"100%"}>
+    <Center paddingTop={10} flexDirection="column" width={"100%"} gap={20}>
       <DescView />
       <Sessions />
       <WhyWe />

@@ -34,10 +34,13 @@ const Navbar = () => {
             </Text>
           </DivMotion>
           <DivMotion>
-            <OneColorText>Fotoksiążka</OneColorText>
+            <OneColorText>O nas</OneColorText>
           </DivMotion>
           <DivMotion>
-            <OneColorText>O Nas</OneColorText>
+            <OneColorText>Oferta</OneColorText>
+          </DivMotion>
+          <DivMotion>
+            <OneColorText>Dlaczego my</OneColorText>
           </DivMotion>
           <DivMotion>
             <OneColorText>Kontakt</OneColorText>

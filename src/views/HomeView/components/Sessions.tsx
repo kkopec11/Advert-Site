@@ -51,56 +51,61 @@ const Sessions = () => {
             Sesja domowa rodzinna – 12 ujęć po obróbce (900zł brutto)
           </Text>
         </HStack>
-        <Text width={"75%"} paddingTop={1}>
-          Budujemy wspomnienia – naturalne, domowe sesje rodzinne to
-          najpiękniejszy prezent dla ludzi, którzy kochają się ponad wszystko.
-        </Text>
-        <Text>
-          Uwieczniamy w kadrach Waszą codzienność. Sesja zdjęciowa w Waszym domu
-          może być sesją:
-        </Text>
-        <List spacing={1}>
-          <ListItem>
-            <ListIcon
-              as={GradientArrow}
-              color="linear(to-br,#FF4CC2, #4ca5ff)"
-            />
-            Noworodkową
-          </ListItem>
-          <ListItem>
-            <ListIcon
-              as={GradientArrow}
-              color="linear(to-br,#FF4CC2, #4ca5ff)"
-            />
-            Ciążową
-          </ListItem>
-          <ListItem>
-            <ListIcon
-              as={GradientArrow}
-              color="linear(to-br,#FF4CC2, #4ca5ff)"
-            />
-            Z dziećmi w różnym wieku
-          </ListItem>
-          <ListItem>
-            <ListIcon
-              as={GradientArrow}
-              color="linear-gradient(#FF4CC2, #4ca5ff)"
-            />
-            Z dziadkami
-          </ListItem>
-          <ListItem>
-            <ListIcon
-              as={GradientArrow}
-              color="linear(to-br,#FF4CC2, #4ca5ff)"
-            />
-            Ze zwierzętami - psami i kotami
-          </ListItem>
-        </List>
-        <Center padding={5}>
-          <Box width="50%">
+        <HStack>
+          <Box width={"50%"}>
+            <Text paddingTop={1}>
+              Budujemy wspomnienia – naturalne, domowe sesje rodzinne to
+              najpiękniejszy prezent dla ludzi, którzy kochają się ponad
+              wszystko.
+            </Text>
+            <Text>
+              Uwieczniamy w kadrach Waszą codzienność. Sesja zdjęciowa w Waszym
+              domu może być sesją:
+            </Text>
+            <List spacing={1}>
+              <ListItem>
+                <ListIcon
+                  as={GradientArrow}
+                  color="linear(to-br,#FF4CC2, #4ca5ff)"
+                />
+                Noworodkową
+              </ListItem>
+              <ListItem>
+                <ListIcon
+                  as={GradientArrow}
+                  color="linear(to-br,#FF4CC2, #4ca5ff)"
+                />
+                Ciążową
+              </ListItem>
+              <ListItem>
+                <ListIcon
+                  as={GradientArrow}
+                  color="linear(to-br,#FF4CC2, #4ca5ff)"
+                />
+                Z dziećmi w różnym wieku
+              </ListItem>
+              <ListItem>
+                <ListIcon
+                  as={GradientArrow}
+                  color="linear-gradient(#FF4CC2, #4ca5ff)"
+                />
+                Z dziadkami
+              </ListItem>
+              <ListItem>
+                <ListIcon
+                  as={GradientArrow}
+                  color="linear(to-br,#FF4CC2, #4ca5ff)"
+                />
+                Ze zwierzętami - psami i kotami
+              </ListItem>
+            </List>
+          </Box>
+          {/* <Center> */}
+          <Box width="40%" padding={10}>
             <Image src="/photo1.jpg" />
           </Box>
-        </Center>
+          {/* </Center> */}
+        </HStack>
         <Box width={"78%"}>
           <Box gap={20}>
             <Text paddingTop={1.5}>
