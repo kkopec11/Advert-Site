@@ -8,7 +8,7 @@ import Contact from "../../views/Contact/Contact";
 
 const LowerView = () => {
   return (
-    <Center paddingTop={10} flexDirection="column" width={"100%"} gap={20}>
+    <Center paddingTop={10} flexDirection="column" width={"100%"} gap={10}>
       <Box boxShadow={"dark-lg"} borderRadius={"20px"} margin={5}>
         <DescView />
       </Box>
